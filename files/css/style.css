@@ -1,12 +1,8 @@
 body{
     font-family: sans-serif;
     overflow: hidden;
-}
-
-  
-  
-  /* Preloader */
-  
+} 
+  /* Preloader */ 
   #preloader {
     position: fixed;
     top: 0;
@@ -18,7 +14,6 @@ body{
     z-index: 99;
     /* makes sure it stays on top */
   }
-  
   #status {
     width: 200px;
     height: 200px;
