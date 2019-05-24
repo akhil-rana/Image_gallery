@@ -2,9 +2,14 @@
     <head>
         <title>The Image Gallery</title>
         <link rel="stylesheet" type="text/css" href="files/css/style.css">
-        <link rel="javascript" href="files/js/jquery-3.4.1.min.js">
+        <script src="files/js/jquery-3.4.1.min.js"></script>
     </head>
     <body>
+        <!-- Preloader -->
+        <div id="preloader">
+        <div id="status">&nbsp;</div>
+        </div>
+
         <h1>The Image Gallery</h1>
         <div class="gallery">
             <a href="files/images/img (1).jpg"><img src="files/images/thumbs/img (1)_tn.jpg" ></a>
@@ -20,6 +25,13 @@
             <a href="files/images/img (11).jpg"><img src="files/images/thumbs/img (11)_tn.jpg" ></a>
             <a href="files/images/img (12).jpg"><img src="files/images/thumbs/img (12)_tn.jpg" ></a>
             <a href="files/images/img (13).jpg"><img src="files/images/thumbs/img (13)_tn.jpg" ></a>
+            <script>
+            $(window).on('load', function() { // makes sure the whole site is loaded 
+                $('#status').fadeOut(); // will first fade out the loading animation 
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+                $('body').delay(10000).css({'overflow':'visible'});
+              });
+            </script>
         </div>
     </body>
 </html>
