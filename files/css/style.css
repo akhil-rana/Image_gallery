@@ -1,6 +1,6 @@
 body{
 
-	font-family: sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
     overflow: hidden;
 	color: #fff;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -222,6 +222,7 @@ body{
   }
 h1{
     text-align: center;
+    font-size: 80px;
     color: forestgreen;
     margin: 30px;
 }
@@ -233,7 +234,7 @@ h1{
     border-radius: 10px;
     width: 350px;
     height: 210px;
-    padding: 3px;
+    padding: 2px;
     
     transition: .65s;
 }
