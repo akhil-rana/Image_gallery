@@ -7,7 +7,20 @@
     <body>
         <!-- Preloader -->
         <div id="preloader">
-        <div id="status">&nbsp;</div>
+        <div id="status"><div class="content">
+                <div class="content__container">
+                  <p class="content__container__text">
+                    Hello
+                  </p>
+                  
+                  <ul class="content__container__list">
+                    <li class="content__container__list__item">world !</li>
+                    <li class="content__container__list__item">fellow !</li>
+                    <li class="content__container__list__item">users !</li>
+                    <li class="content__container__list__item">Prrrrrr... </li>
+                  </ul>
+                </div>
+        </div></div>
         </div>
 
         <h1>The Image Gallery</h1>
@@ -26,13 +39,17 @@
             <a href="files/images/img (12).jpg"><img src="files/images/thumbs/img (12).jpg" ></a>
             <a href="files/images/img (13).jpg"><img src="files/images/thumbs/img (13).jpg" ></a>
             
+
+            
+
+
             <script>
            
             setTimeout(function() { // makes sure the whole site is loaded 
                 $('#status').fadeOut(); // will first fade out the loading animation 
                 $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
                 $('body').delay(350).css({'overflow':'visible'});
-              },3500);
+            },5200);
               
               
 
